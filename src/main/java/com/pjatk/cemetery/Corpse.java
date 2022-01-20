@@ -69,4 +69,15 @@ public class Corpse {
     public void setSex(Sex sex) {
         this.sex = sex;
     }
+
+    @Override
+    public String toString() {
+        return "Coprse{" +
+                "id = " + this.id +
+                ", name = " + this.name +
+                ", surname = " + this.surname +
+                ", ageWhenDied = " + this.ageWhenDied +
+                ", sex = " + this.sex +
+                "}";
+    }
 }
