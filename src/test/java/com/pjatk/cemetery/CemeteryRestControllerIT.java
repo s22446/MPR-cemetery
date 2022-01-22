@@ -50,7 +50,7 @@ public class CemeteryRestControllerIT {
 
     @Test
     void shouldReturnSuccess_getCemeteryById() throws Exception {
-        MockHttpServletRequestBuilder getRequestBuilder = get("/cemetery/getCemeteryById").param("id", "1");
+        MockHttpServletRequestBuilder getRequestBuilder = get("/cemetery/getCemeteryById/1");
 
         mockMvc.perform(getRequestBuilder)
                 .andDo(print())
